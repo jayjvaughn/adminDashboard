@@ -69,6 +69,7 @@ a{
 }
 /* <----Top row------> */
 .topHeader{
+    grid-area: 1 / 1 / 2 / 1;
     display: flex;
     justify-content: space-around;
 }
@@ -83,7 +84,7 @@ a{
 }
 input{
     width: 400px;
-    background-color: rgb(224, 224, 224);
+    background-color: #e0e0e0;
     height: 25px;
     border: none;
     border-radius: 20px;
@@ -108,5 +109,58 @@ img[src="./assets/woman.png"]{
     align-self: center;
 }
 /* <-----Bottom Row---> */
-/* .bottomHeader{
-} */
+.bottomHeader{
+    grid-area: 2 / 1 / 2 / 1;
+    display:flex;
+    justify-content: space-around;
+}
+.bottomLeft{
+    display: flex;
+    gap: 10px;
+}
+.bottomRight{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+span{
+    font-size: 13px;
+}
+button{
+    color: white;
+    background-color: #00a2ff;
+    border: none;
+    width: 75px;
+    padding: 10px;
+    border-radius: 20px;
+}
+button:hover{
+    color: yellow;
+    cursor: pointer;
+}
+.content{
+    grid-area: 2 / 2 / 2 / 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.contentLeft{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.card{
+    padding: 20px;
+    height:150px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: -3px 5px 10px #00a2ff;
+}
+.card2{
+    width: 150px;
+    height: 300px;
+    font-size: 12px;
+}
