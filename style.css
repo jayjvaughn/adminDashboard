@@ -161,6 +161,15 @@ button:hover{
 }
 .card2{
     width: 150px;
-    height: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     font-size: 12px;
+    border: 2px solid #00a2ff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contentRight{
+    padding-left: 10px;
 }
