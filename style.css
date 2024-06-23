@@ -142,7 +142,7 @@ button:hover{
 .content{
     grid-area: 2 / 2 / 2 / 2;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 5px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -161,7 +161,7 @@ button:hover{
     box-shadow: -3px 5px 10px #00a2ff;
 }
 .card2{
-    width: 150px;
+    width: 200px;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -188,7 +188,7 @@ img[src="./assets/boy.png"]{
 }
 
 .card3{
-    width: 150px;
+    width: 200px;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -200,4 +200,6 @@ img[src="./assets/boy.png"]{
 }
 .profile{
     display: flex;
+    gap: 10px;
+    align-items: center;
 }
