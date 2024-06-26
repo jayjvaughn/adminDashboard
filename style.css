@@ -12,7 +12,7 @@ a{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 210px 3fr;
     grid-template-rows: 1fr 3fr;
     height: 100vh;
 }
@@ -20,6 +20,9 @@ a{
 .sideBar{
     padding: 30px;
     grid-area: 1 / 1 / 3 / 1;
+    position: fixed;
+    width: 150px;
+    height: 100vh;
     background-color: #00a2ff;
 }
 .icon{
@@ -105,6 +108,7 @@ img[src="./assets/woman.png"]{
     height: 40px;
 }
 .topHeaderName{
+    display: flex;
     font-size: 20px;
     align-self: center;
 }
@@ -150,8 +154,8 @@ button:hover{
 }
 .contentLeft{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 200px;
 }
 .card{
     padding: 20px;
@@ -170,12 +174,11 @@ button:hover{
     border: 2px solid #00a2ff;
     border-radius: 10px;
     padding: 10px;
+    margin-bottom: 50px;
 }
 .contentRight{
     padding-left: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    
 }
 img[src="./assets/man.png"]{
     height: 40px;
@@ -200,6 +203,7 @@ img[src="./assets/boy.png"]{
 }
 .profile{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
 }
